@@ -3,6 +3,13 @@ This is CIS PDF Parser
 This is give you a very good working copy of excel
 The delimiter is "~"
 
+Usage:
+Create index.txt file containing the CIS index
+Create all_text.txt containing all the CIS data . all_text.txt should not contain the indexes
+use index_parse.py to generate index as list
+copy paste the output list in one.py 
+check one.py for releavent changes in headings and data
+
 Known Bugs:
 Sometimes the index may be screwed becuase its looking for (Scored) and (Not Scored) for determining next item. Please check if the all the index items you want to have has (Scored) or (Not Scored)
 Eg. 1.1.1.1.2.31 has neither of (Scored) or (Not Scored). I have to manually add (Scored) in the index.txt  file to parse correctly
