@@ -1,0 +1,11 @@
+This is CIS PDF Parser
+
+This is give you a very good working copy of excel
+The delimiter is "~"
+
+Known Bugs:
+Sometimes the index may be screwed becuase its looking for (Scored) and (Not Scored) for determining next item. Please check if the all the index items you want to have has (Scored) or (Not Scored)
+Eg. 1.1.1.1.2.31 has neither of (Scored) or (Not Scored). I have to manually add (Scored) in the index.txt  file to parse correctly
+
+Also If one of the headings is not found then that cell of that particular heading gets botched up, however its easy to spot so just look at your excel
+Eg. heading "Default Value" is missing in 1.2.3.3.2.3.1. See what happens in the final excel sheet
