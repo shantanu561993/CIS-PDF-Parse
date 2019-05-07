@@ -5,8 +5,8 @@ for line in index:
         match =  re.match("((\d+\.)+\d*\s+.+\((Not\sScored|Scored)\))",line)
         if match:
             data =  match.group()
-            print data
-            #match1 = re.match("(((\d\.)+)\d*)",data)
-            #print '"'+match1.group()+'",',
+            #print data
+            match1 = re.match("(((\d+\.)+)\d*)",data)
+            print '"'+match1.group()+'",',
     except:
         pass
