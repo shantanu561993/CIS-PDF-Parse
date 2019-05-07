@@ -63,20 +63,25 @@ def find_data(out):
         
         
 def get_data(data,start,end):
+    #print len(data)
     count = 0
     out=[]
     for line in data:
         if start in line and line.startswith(start):
-            match  = re.match(start+"\s+",line)
+            match  = re.match("^"+start+"\s+",line)
             if match:
                 break
         count +=1
 
-    start_data = count 
+    start_data = count
     while True:
-        out.append(data[start_data])
+        print start_data
+        temp = data[start_data]
+        out.append(temp)
         start_data +=1
-        if end in data[start_data]:
+        match  = re.match("^"+end+"\s+",data[start_data])
+        print match
+        if match:
             break
 
     find_data(out)
